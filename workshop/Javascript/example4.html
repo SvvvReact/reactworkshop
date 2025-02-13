@@ -1,0 +1,22 @@
+<!-- 
+Function : Function is a self contained block of statement, which is mainly used to perform some specific task. 
+
+Types of function : 
+    a. Predefined function : 
+       Whose definition part is already defined
+       Ex : toPrecision(), toFixed(), alert() etc
+       
+    b. UserDefined function : 
+       Definition part depends upon programmer
+       Ex : display(), print(), addition() etc 
+-->
+<script>
+    function printData(value){
+       var result =  value ?? "Not Defined";
+       document.write("<br>"+result); 
+    }
+    printData(45);
+    printData(0);
+    printData(null);
+    printData(undefined);
+</script>

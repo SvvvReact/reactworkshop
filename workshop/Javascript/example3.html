@@ -1,0 +1,20 @@
+<!-- 
+    JavaScript PopUp's
+    ------------------
+        1. alert()
+        2. confirm()
+        3. prompt()
+-->
+
+<script>
+    alert('Welcome User');
+    var p = prompt("Enter Principal ");
+    var r = prompt("Enter Rate ");
+    var t = prompt("Enter Time ");
+    // document.write(parseInt(p)+parseFloat(r)+parseInt(t));
+    var amt = p * Math.pow(1+r/100,t);
+    var ci = amt - p;
+    console.log("Compound Interest : "+ci);
+    console.log("<br>Compound Interest : "+ci.toPrecision(3));
+    console.log("<br>Compound Interest : "+ci.toFixed(3));
+</script>
